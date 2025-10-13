@@ -11,6 +11,19 @@ return {
     config = function()
       require "configs.lspconfig"
     end,
+     opts = {
+        servers = {
+          cssls = {
+            settings = {
+              css = {
+                lint = {
+                  unknownAtRules = "ignore",
+                },
+              },
+            },
+          },
+        },
+      },
   },
 
   {

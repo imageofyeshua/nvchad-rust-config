@@ -5,6 +5,14 @@ return {
   ["rust-analyzer"] = {
     cargo = {
       allFeatures = true,
-    }
+    },
+    check = {
+      allTargets = false,
+      extraArgs = {
+        "--target",
+        "thumbv7m-none-eabi"
+      },
+      command = "clippy",
+    },
   }
 }
