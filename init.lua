@@ -46,3 +46,9 @@ require "autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+require("neotest").setup({
+  adapters = {
+    require("neotest-dotnet")
+  }
+})

@@ -16,3 +16,4 @@ opts = {
   },
 }
 -- read :h vim.lsp.config for changing options of lsp servers 
+vim.lsp.config("roslyn", {})
